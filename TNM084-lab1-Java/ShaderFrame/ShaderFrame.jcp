@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<settings>
+		<label>ShaderFrame</label>
+		<root_path>\</root_path>
+		<output_path>\</output_path>
+		<source_path>\</source_path>
+		<jdkprofile_ref>JDK version 1.5.0_06</jdkprofile_ref>
+		<compiler_ref/>
+		<ant_ref/>
+	</settings>
+	<ant_events/>
+	<run_items/>
+	<runtimes>
+		<runtime>
+			<label>&lt;Default&gt;</label>
+			<application_ref>&lt;Default&gt;</application_ref>
+			<applet_ref>&lt;Default&gt;</applet_ref>
+			<debugger_ref>&lt;Default&gt;</debugger_ref>
+			<param/>
+			<run>ShaderMain</run>
+			<verify>true</verify>
+		</runtime>
+	</runtimes>
+	<libraries/>
+	<files>
+		<include>
+			<fileitem>
+				<path>DemoShader.java</path>
+			</fileitem>
+			<fileitem>
+				<path>ImprovedNoise.java</path>
+			</fileitem>
+			<fileitem>
+				<path>PerlinSimplexNoise.java</path>
+			</fileitem>
+			<fileitem>
+				<path>Shader.java</path>
+			</fileitem>
+			<fileitem>
+				<path>ShaderMain.java</path>
+			</fileitem>
+			<fileitem>
+				<path>ShaderPanel.java</path>
+			</fileitem>
+			<fileitem>
+				<path>SimplexNoise.java</path>
+			</fileitem>
+			<fileitem>
+				<path>WorleyNoise.java</path>
+			</fileitem>
+		</include>
+		<exclude>
+			<fileitem>
+				<path>SLSimplexNoise.java</path>
+			</fileitem>
+		</exclude>
+	</files>
+	<tasks/>
+</project>
