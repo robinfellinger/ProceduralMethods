@@ -1,0 +1,18 @@
+shader Example (
+	output color Out = 0.0,
+	output color Bump = 0.0,
+	color baseColor = color(0.0, 0.0, 1),
+	color dirtColor = color(0,0,0)
+)
+{
+
+	float clayNoise = noise("perlin",P*15); //Basic perlin noise
+ 	float dirtNoise = noise("simplex",P/20);
+ 	
+ 	color clay = mix(baseColor,clayNoise,clayNoise);
+ 	
+ 	color dirt = mix(dirtColor,dirtNoise,1-smoothstep(0.0,0.8,dirtNoise));
+ 	
+ 	Out = mix(dirt,clay,0.8);
+ 	Bump = Out;
+}
