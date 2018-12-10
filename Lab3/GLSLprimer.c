@@ -62,8 +62,8 @@
 #endif
 
 // File names for a mesh model, a texture file and the two shaders
-#define TEXTUREFILENAME PATH "textures/lava.tga"
-#define MESHFILENAME PATH "meshes/heart.obj"
+#define TEXTUREFILENAME PATH "textures/blood.tga"
+#define MESHFILENAME PATH "meshes/heart_old.obj"
 #define VERTEXSHADERFILENAME PATH "vertexshader.glsl"
 #define FRAGMENTSHADERFILENAME PATH "fragmentshader.glsl"
 

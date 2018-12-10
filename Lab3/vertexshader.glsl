@@ -10,9 +10,12 @@ uniform float time;
 
 out vec3 interpolatedNormal;
 out vec2 fragPos;
+out vec3 pos;
 
 void main(){
-  vec3 pos = Position + Normal*(abs(sin(time)))/5;
+  float scale = (abs(sin(time*2)))/10;
+  float scale2 = (abs(cos(time/4)));
+  pos = Position + Normal*scale*scale2;
   gl_Position = (P * MV) * vec4(pos, 1.0);
   interpolatedNormal = mat3(MV) * Normal;
   fragPos = TexCoord;
